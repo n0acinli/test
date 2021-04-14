@@ -1,0 +1,12 @@
+{
+	"sequences": [
+		{
+			"clips": [
+				{
+					"type": "source",
+					"path": "/usr/local/nginx/html/video.mp4"
+				}
+			]
+		}
+	]
+}
