@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <title>Dash.js test player</title>
+    <style>
+        videoz {
+            width: 640px;
+            height: 360px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <video id="videoPlayer" controls></video>
+    </div>
+    <script src="dash.all.min.js"></script>
+    <script>
+        (function(){
+            //const path = "https://dash.akamaized.net/envivio/EnvivioDash3/manifest.mpd";
+            const path = "dash/test.json/manifest.mpd";
+            var player = dashjs.MediaPlayer().create();
+            player.initialize(document.querySelector("#videoPlayer"), path, true);
+        })();
+    </script>
+</body>
+</html>
